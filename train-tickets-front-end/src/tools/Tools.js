@@ -1,4 +1,4 @@
-// 将对象转换为post请求参数的方法
+// 将对象转换为post请求参数的方法【测试comment】
 const Tools = {
   toPostPara: (obj) => {
     let output = '';
