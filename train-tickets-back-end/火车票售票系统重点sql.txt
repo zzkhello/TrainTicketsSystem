@@ -1,4 +1,4 @@
-//根据起至车站查询火车
+//根据起至车站查询火车testtongbu mayun1111
 select a.train_id, train_name, a.stop_id as start_index, b.stop_id as end_index, a.station_name as start, b.station_name as end, a.arrive_time as start_time, b.arrive_time as end_time, (b.mileage - a.mileage) as mileage 
 from `12307`.stop as a,`12307`.stop as b,`12307`.train as c 
 where a.city_name = '沈阳' and b.city_name = '济南' and a.stop_id < b.stop_id and a.train_id = b.train_id and a.train_id = c.train_id and a.train_id not in (
